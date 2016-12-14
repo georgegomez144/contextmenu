@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, .container {
+  height: 100%;
+  font-family: Verdana;
+  font-size: 10px;
+}
+
+.container {
+  background: #f6f6f6;
+}
+
+.context-menu {
+  background: #ffffff;
+  width: 0;
+  height: auto;
+  max-height: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  overflow:hidden;
+  display: none;
+  -webkit-transition: width 200ms ease-in, max-height 200ms ease-in;
+  transition: width 200ms ease-in, max-height 200ms ease-in;
+}
+
+.context-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.context-menu ul li:not(.separator) {
+  padding: 10px 5px;
+  border-left: 4px solid transparent;
+  cursor: pointer;
+}
+
+.context-menu ul li:hover {
+  background: #eeeeee;
+  border-color: #666666;
+}
+
+.separator {
+  height: 1px;
+  background: #e6e6e6;
+  margin: 0;
+}
